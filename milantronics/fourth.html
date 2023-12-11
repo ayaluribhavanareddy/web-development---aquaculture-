@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- ... (previous content) ... -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <div class="input-row">
+                <input type="text" placeholder="First Name" id="first-name" required>
+                <input type="text" placeholder="Last Name" id="last-name" required>
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Country/Region" id="country" required>
+                <input type="text" placeholder="Phone Number" id="phone" required>
+            </div>
+            <input type="email" placeholder="E-mail" id="email" required>
+            <div class="privacy-policy">
+                <label for="subscribe-checkbox">
+                    <input type="checkbox" id="subscribe-checkbox" required>
+                    <span class="checkmark" id="checkbox-mark"></span>
+                </label>
+                <p class="privacy-text">
+                    I agree to receive other communications from MILATRONICS.<br>
+                    You may unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+                </p>
+            </div>
+            <button id="submit-button" onclick="showAlert()">Submit</button>
+        </div>
+    </section>
+    <!-- ... (rest of your website content) ... -->
+    <script src="script1.js"></script>
+</body>
+</html>
+<style>
+    /* Add these styles to your CSS code */
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.privacy-policy label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.privacy-policy .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #000080; /* Dark Blue */
+    border-radius: 50%;
+}
+
+.privacy-policy label input[type="checkbox"] {
+    display: none;
+}
+
+.privacy-text {
+    margin-left: 10px;
+    color: #000080; /* Dark Blue Text */
+}
+
+#submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000080; /* Dark Blue */
+    color: #fff; /* White Text */
+    border: none;
+    cursor: pointer;
+}
+
+</style>

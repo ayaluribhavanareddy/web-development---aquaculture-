@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <style>
+      
+body {
+    font-family: Arial, sans-serif;
+    color: #000080;
+  }
+
+.header {
+    min-height: 5vh;
+    width:100%;
+   background-color: rgb(10, 123, 4);
+    background-position:center;
+    background-size: cover;
+   position: relative;
+           
+  }
+  
+nav ul {
+    display: flex;
+ba
+ 
+  }
+
+  .nav-links{
+    flex: 1;
+    text-align:center;
+    height: 10vh;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 20px;
+   
+
+  }
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  margin-right: 20px;
+ 
+
+  }
+  .nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+  
+    transition: 0.5;
+
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+
+  }
+    </style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milantronics</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Milatronics Logo" class="small-icon">
+               
+                <ul>
+                    <nav class="navbar">
+                        <a href="main.html"><span>Home</span></a>
+                        <a href="about.html"><span>About</span></a>
+                        <a href="products.html"><span>Products</span></a>
+                        <a href="fcon.html"><span>Contact</span></a>
+                    </nav>
+                </ul>
+            
+            </div>
+        </header>
+        <style>
+            nav{
+                display:flex;
+                gap:3rem;
+            }
+
+        </style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="fcon.css">
+</head>
+<body>
+    
+    <main>
+        
+        <section id="contactInfo" style="background-color: #87CEEB;">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> info@milatronics.in</li>
+                <li><strong>Phone:</strong> +91 9182566321</li>
+                <li><strong>Building:</strong> 7-158, bantumilli mandal, AP </li>
+            </ul>
+        </section>
+        <section id="contactForm" style="background-color: #87CEEB;">
+            <h2>Contact Form</h2>
+            <form id="messageForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" rows="4" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="fcon.js"></script>
+</body>
+</html>
